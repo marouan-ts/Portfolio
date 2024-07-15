@@ -15,7 +15,7 @@
     box-shadow: 0 0 5px #fff;
 }
 .sideleft-btn{
-    @apply text-orange-500 relative hover:scale-105 hover:text-white
+    @apply text-orange-500 relative text-xl hover:scale-105 hover:text-white
 }
 
 
@@ -33,9 +33,23 @@
     @apply w-full h-[160px] text-8xl flex justify-center items-center
 }
 .card{
-    @apply w-[300px] bg-blue-900 hover:scale-105 flex flex-col text-cyan-100 rounded-3xl border-2 border-blue-950 ;
+    @apply w-[300px] bounce bg-blue-900 hover:scale-105 flex flex-col text-cyan-100 rounded-3xl border-2 border-blue-950 ;
     box-shadow: 0 0 16px #ffffff;
 }
+.bounce{
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
 .card h2{
     @apply text-3xl text-cyan-100 text-center py-5 font-semibold tracking-wide
 }
@@ -68,6 +82,5 @@
     @apply w-full hover:scale-105;
 }
 .project a {
-    @apply py-2 px-5
+    @apply py-2 px-5;
 }
-

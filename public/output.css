@@ -584,6 +584,10 @@ video {
   margin-bottom: 4rem;
 }
 
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
 .flex{
   display: flex;
 }
@@ -657,10 +661,6 @@ video {
   width: 80%;
 }
 
-.w-\[85\%\]{
-  width: 85%;
-}
-
 .w-\[90\%\]{
   width: 90%;
 }
@@ -717,6 +717,10 @@ video {
 
 .text-wrap{
   text-wrap: wrap;
+}
+
+.rounded-3xl{
+  border-radius: 1.5rem;
 }
 
 .rounded-full{
@@ -781,6 +785,11 @@ video {
   padding: 1.25rem;
 }
 
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -795,10 +804,6 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.pl-5{
-  padding-left: 1.25rem;
-}
-
 .pt-28{
   padding-top: 7rem;
 }
@@ -811,6 +816,21 @@ video {
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold{
@@ -836,6 +856,11 @@ video {
   color: rgb(207 250 254 / var(--tw-text-opacity));
 }
 
+.text-green-400{
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity));
+}
+
 .text-orange-500{
   --tw-text-opacity: 1;
   color: rgb(249 115 22 / var(--tw-text-opacity));
@@ -854,6 +879,8 @@ video {
 
 .sideleft-btn{
   position: relative;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   --tw-text-opacity: 1;
   color: rgb(249 115 22 / var(--tw-text-opacity));
 }
@@ -937,6 +964,7 @@ video {
   background-color: rgb(30 58 138 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(207 250 254 / var(--tw-text-opacity));
+  animation: bounce 1s infinite;
 }
 
 .card:hover{
@@ -947,6 +975,21 @@ video {
 
 .card{
   box-shadow: 0 0 16px #ffffff;
+}
+
+.bounce{
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: rotate(3deg);
+  }
+
+  50% {
+    transform: rotate(-3deg);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 
 .card h2{
@@ -1103,8 +1146,8 @@ video {
 }
 
 @media (min-width: 640px){
-  .sm\:flex{
-    display: flex;
+  .sm\:inline{
+    display: inline;
   }
 
   .sm\:h-\[400px\]{
@@ -1123,8 +1166,17 @@ video {
     width: 405px;
   }
 
+  .sm\:w-\[85\%\]{
+    width: 85%;
+  }
+
   .sm\:pl-10{
     padding-left: 2.5rem;
+  }
+
+  .sm\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1178,8 +1230,7 @@ video {
     flex-wrap: wrap;
   }
 
-  .md\:pl-24{
-    padding-left: 6rem;
+  .md\:pl-28{
+    padding-left: 7rem;
   }
 }
-

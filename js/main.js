@@ -13,3 +13,8 @@ const showSkills = () => {
     ReadMape.innerHTML +=  `<div class="op"> And more ...</div>`
 }
 showSkills();
+
+// const skill = document.getElementById('skil')
+// for(let i = 0; i<100 ; i++) {
+//     skill.style.backgroundImage = `background-image: linear-gradient(to right , #ffffff ${i}%, transparent );`
+// }
