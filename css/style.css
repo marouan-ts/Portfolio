@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    transition: all .4s;
+    scroll-behavior: smooth;
+}
+
+.sideleft{
+    box-shadow: 0 0 5px #fff;
+}
+.sideleft-btn{
+    @apply text-orange-500 relative hover:scale-105 hover:text-white
+}
+
+
+.tit{
+    text-shadow: 1px 1px 3px #fff;
+    @apply  tracking-wider my-12 text-5xl md:text-7xl  w-fit text-cyan-300;
+}
+.skill{
+    @apply flex justify-between items-center w-[90%] md:w-[40%] p-4 border-2 text-cyan-100 border-white rounded-[20px];
+}
+.skill-cont{
+    @apply border border-white rounded-xl h-[15px] w-2/3
+}
+.ico{
+    @apply w-full h-[160px] text-8xl flex justify-center items-center
+}
+.card{
+    @apply w-[300px] bg-blue-900 hover:scale-105 flex flex-col text-cyan-100 rounded-3xl border-2 border-blue-950 ;
+    box-shadow: 0 0 16px #ffffff;
+}
+.card h2{
+    @apply text-3xl text-cyan-100 text-center py-5 font-semibold tracking-wide
+}
+.img-anim{
+    background-image: linear-gradient(to top, #ff7519,#ffffff00);
+}
+.left-spin{
+    animation: l-spin 1s linear infinite;
+}
+@keyframes l-spin{
+    to{
+      transform: rotate(-360deg);
+    }
+  }
+.op{
+    @apply flex gap-3 md:gap-5 px-3 justify-around items-center py-2 md:py-3 my-1 rounded-lg bg-cyan-100 w-fit;
+}
+.op a{
+    @apply hover:scale-105 hover:bg-orange-600 px-4 py-2 bg-orange-500 text-white rounded-lg
+}
+.op span{
+    @apply w-7 h-7 flex justify-center items-center rounded-full border border-black text-blue-900
+}
+
+.project {
+    @apply w-[500px] border-2 border-cyan-100 bg-blue-900 rounded-xl overflow-hidden;
+
+}
+.project img {
+    @apply w-full hover:scale-105;
+}
+.project a {
+    @apply py-2 px-5
+}
+
