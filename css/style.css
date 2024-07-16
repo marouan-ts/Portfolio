@@ -33,25 +33,13 @@
     @apply w-full h-[160px] text-8xl flex justify-center items-center
 }
 .card{
-    @apply w-[300px] bounce bg-blue-900 hover:scale-105 flex flex-col text-cyan-100 rounded-3xl border-2 border-blue-950 ;
-    box-shadow: 0 0 16px #ffffff;
-}
-.bounce{
-    animation: bounce 1s infinite;
+    @apply w-[300px] bg-cyan-100 hover:scale-105 flex flex-col text-blue-900 rounded-3xl border-2 border-blue-950 ;
+    /* box-shadow: 0 0 16px #ffffff; */
 }
 
-@keyframes bounce {
-  0%, 100% {
-    transform: rotate(3deg);
-  }
-  50% {
-    transform: rotate(-3deg);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
-}
 
 .card h2{
-    @apply text-3xl text-cyan-100 text-center py-5 font-semibold tracking-wide
+    @apply text-4xl text-blue-900 text-center py-5 font-semibold tracking-wide
 }
 .img-anim{
     background-image: linear-gradient(to top, #ff7519,#ffffff00);
@@ -65,13 +53,13 @@
     }
   }
 .op{
-    @apply flex gap-3 md:gap-5 px-3 justify-around items-center py-2 md:py-3 my-1 rounded-lg bg-cyan-100 w-fit;
+    @apply flex gap-2 md:gap-5 px-2 justify-around items-center py-1 md:py-3 my-1 rounded-lg bg-cyan-100 w-fit;
 }
 .op a{
-    @apply hover:scale-105 hover:bg-orange-600 px-4 py-2 bg-orange-500 text-white rounded-lg
+    @apply hover:scale-105 hover:bg-orange-600 px-3 py-2 bg-orange-500 text-white rounded-lg
 }
 .op span{
-    @apply w-7 h-7 flex justify-center items-center rounded-full border border-black text-blue-900
+    @apply hidden sm:flex w-7 h-7  justify-center items-center rounded-full border border-black text-blue-900
 }
 
 .project {
@@ -83,4 +71,16 @@
 }
 .project a {
     @apply py-2 px-5;
+}
+
+
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .container {
+        width: 100vh;
+    }
+}
+
+@media (max-width: 300px) {
+    
 }
